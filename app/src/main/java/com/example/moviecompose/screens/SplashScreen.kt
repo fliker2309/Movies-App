@@ -13,15 +13,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.moviecompose.navigation.Screens
-import com.example.moviecompose.ui.theme.MovieComposeTheme
 import kotlinx.coroutines.delay
 
 @Composable
-fun SplashScreen( navController: NavController) {
+fun SplashScreen(navController: NavController) {
     var startAnimate by remember {
         mutableStateOf(false)
     }
@@ -39,7 +37,7 @@ fun SplashScreen( navController: NavController) {
 }
 
 @Composable
-fun Splash(alpha : Float) {
+fun Splash(alpha: Float) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
@@ -54,5 +52,3 @@ fun Splash(alpha : Float) {
         )
     }
 }
-
-
